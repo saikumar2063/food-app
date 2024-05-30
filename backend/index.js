@@ -6,12 +6,7 @@ const port = 4000;
 const mongoDB = require("./db");
 mongoDB();
 
-app.use(
-  cors({
-    origin: "https://vercel.com/saikumar2063s-projects/food-app-99wi",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  })
-);
+app.use(cors());
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
