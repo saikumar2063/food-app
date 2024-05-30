@@ -8,7 +8,7 @@ mongoDB();
 
 app.use(
   cors({
-    origin: "https://vercel.com/saikumar2063s-projects/food-app",
+    origin: "https://vercel.com/saikumar2063s-projects/food-app-99wi",
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
