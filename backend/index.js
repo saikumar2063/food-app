@@ -4,7 +4,10 @@ const port = 4000;
 const mongoDB = require("./db");
 mongoDB();
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3004");
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://foodmunchapp.onrender.com"
+  );
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-requested-with,Content-Type,Accept"
