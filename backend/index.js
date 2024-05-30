@@ -1,8 +1,12 @@
 const express = require("express");
+let cors = require("cors");
+
 const app = express();
 const port = 4000;
 const mongoDB = require("./db");
 mongoDB();
+
+app.use(cors());
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
