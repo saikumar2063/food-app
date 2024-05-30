@@ -9,6 +9,7 @@ mongoDB();
 app.use(
   cors({
     origin: "https://foodmunchapp.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
 app.use((req, res, next) => {
